@@ -19,7 +19,7 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    private ObjectId id;   // Mongo’s native _id
+    private String id;   // Mongo’s native _id
 
     private String username;
     private String password;
@@ -31,11 +31,11 @@ public class User implements Serializable {
     public User() {
     }
 
-    public ObjectId getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(String id) {
         this.id = id;
     }
 
